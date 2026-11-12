@@ -1,0 +1,10 @@
+{
+  "name": "DartVision Score & Accuracy Tracker",
+  "description": "X01 dart match scorer, practice accuracy analytics & Gemini Vision AI camera dartboard detection with local storage.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --bg-arena: #090d14;
+    --surface-base: #111722;
+    --surface-elevated: #182030;
+    --border-hairline: #222c3d;
+    --accent-emerald: #10b981;
+    --accent-crimson: #ef4444;
+  }
+
+  body {
+    background-color: var(--bg-arena);
+    color: #f1f5f9;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  
+  .font-display {
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+    letter-spacing: -0.02em;
+  }
+  
+  .font-mono-numbers {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Subtle oche floor line texture for tournament ambiance */
+.oche-line {
+  background: repeating-linear-gradient(
+    90deg,
+    #1e293b 0px,
+    #1e293b 8px,
+    transparent 8px,
+    transparent 16px
+  );
+}
+
+/* Clean Custom scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #090d14;
+}
+::-webkit-scrollbar-thumb {
+  background: #232d42;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
